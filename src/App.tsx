@@ -23,15 +23,21 @@ export const App = () => {
       >
         <div className="container">
           <div className="navbar-brand">
-            <div
-              className={`navbar-item ${location.pathname === '/' ? 'is-active' : ''}`}
-            >
-              <Link to="/">Home</Link>
+            <div className="navbar-item">
+              <Link
+                to="/"
+                className={`${location.pathname === '/' ? 'is-active' : ''}`}
+              >
+                Home
+              </Link>
             </div>
-            <div
-              className={`navbar-item ${location.pathname.startsWith('/tabs') ? 'is-active' : ''}`}
-            >
-              <Link to="/tabs">Tabs</Link>
+            <div className="navbar-item">
+              <Link
+                to="/tabs"
+                className={`${location.pathname.startsWith('/tabs') ? 'is-active' : ''}`}
+              >
+                Tabs
+              </Link>
             </div>
           </div>
         </div>
